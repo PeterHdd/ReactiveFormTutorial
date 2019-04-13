@@ -1,14 +1,47 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      <b>Sign Up</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content>  
+    <form [formGroup]="signUpForm">
+    <ion-grid>
+        <ion-row>
+            <ion-label text-center label-design><b>New</b></ion-label>
+        </ion-row>
+        <ion-row>
+            <ion-label text-center label-design><b>Account</b></ion-label>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-item lines="none">
+            <ion-input input-design formControlName="fullName" type="text" placeholder="Full Name"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row justify-content-center>
+        <ion-item lines="none">
+          <ion-datetime dateTime-design formControlName="dateOfBirth" displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>
+        </ion-item>
+      </ion-row>
+      <ion-row justify-content-center>
+        <ion-item lines="none">
+            <ion-input input-design formControlName="email" type="email" placeholder="Email"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row justify-content-center>
+        <ion-item lines="none">
+            <ion-input input-design formControlName="password" type="password" placeholder="Password"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row justify-content-center>
+            <ion-button btn-design (click)="submitForm()" expand="block" shape="round" color="primary" type="submit" [disabled]="signUpForm.invalid">
+                Login
+              </ion-button>
+      </ion-row>
+    </ion-grid>
+  </form>
 </ion-content>

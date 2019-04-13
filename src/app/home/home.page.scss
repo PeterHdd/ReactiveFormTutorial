@@ -1,1 +1,74 @@
 
+[input-design]
+{
+    border-radius        : 20em !important;
+    background-color     : var(--ion-color-light-shade);
+    padding-left         : 1em !important;
+    color                : blue !important;
+    --placeholder-opacity: inherit !important;
+}
+
+[dateTime-design]
+{
+    border-radius: 20em !important;
+    background-color: var(--ion-color-light-shade);
+    padding-left: 1em !important;
+    min-width: 310px !important;
+    font-weight: normal !important;
+    color: blue !important;
+}
+
+
+form
+{
+    padding-top: 6em !important;
+}
+
+[label-design]
+{
+   color: var(--ion-color-medium-contrast);
+   font-size: 2em !important;
+   padding-left: 2em !important;
+}
+
+
+ion-content
+{
+    --background: url('./../../assets/images/signupBackground.jpg')  no-repeat center center / cover !important;
+}
+
+ion-item
+{
+    --background : inherit !important;
+}
+
+[progress-bar]
+{
+    align-items: center !important;
+    width: 80% !important;
+    height: 6px !important;
+    margin-top: 1em !important;
+    left: 2em !important;
+}
+
+ion-input
+{
+    width: 311px !important;
+}
+
+ion-button
+{
+    background: inherit !important;
+}
+
+.progress-outer[_ngcontent-c1] 
+{
+    width: 96%;
+    margin: 10px 2%;
+    padding: 3px;
+    background-color: transparent !important;
+    border: 1px solid #dcdcdc;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
