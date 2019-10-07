@@ -27,6 +27,7 @@
     "@ngx-progressbar/core": "^5.3.2",
     "angular-progress-bar": "^1.0.9",
     "core-js": "^2.5.4",
+    "node": "^8.9.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.29"
   },
