@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -13,14 +13,14 @@ export class HomePage
   fullName           : any;
   dateOfBirth        : any;
 
-  constructor(private fb : FormBuilder)
+  constructor()
   {
-    this.signUpForm = this.fb.group({
-      fullName    : ["",Validators.compose([Validators.required])],
-      email       : ["", Validators.compose([Validators.required])],
-      password    : ["", Validators.compose([Validators.required])],
-      dateOfBirth : ["", Validators.compose([Validators.required])],
-    })
+    // this.signUpForm = this.fb.group({
+    //   fullName    : ["",Validators.compose([Validators.required])],
+    //   email       : ["", Validators.compose([Validators.required])],
+    //   password    : ["", Validators.compose([Validators.required])],
+    //   dateOfBirth : ["", Validators.compose([Validators.required])],
+    // })
   }
 
   submitForm()
